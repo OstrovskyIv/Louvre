@@ -1,2 +1,2 @@
 # Louvre
-This is my first html sat, an attempt to do something great
+Here is a site about the Louvre. Basic knowledge was used to create this site. Also this is my first website
