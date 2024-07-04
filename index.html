@@ -1,58 +1,91 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <base href="https://luvre.com/" />
-    <meta charset="UTF-8">
-    <meta name="author" content="Ostrovsky">
-    <meta name="description" content="Louvre">
-    <meta name="keywords" content="museum, art gallery, pinakothek, exhibition hall, art gallery, art gallery, art gallery, fine arts museum, art museum, state gallery, national museum, art collection">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Louvre.com</title>
+<html lang="ru"> 
+<head> 
+    <base href="https://luvre.com/" /> 
+    <meta charset="UTF-8"> 
+    <meta name="author" content="Ostrovsky"> 
+    <meta name="description" content="Louvre"> 
+    <meta name="keywords" content="museum, art gallery, pinakothek, exhibition hall, art gallery, art gallery, art gallery, fine arts museum, art museum, state gallery, national museum, art collection"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Louvre.com</title> 
 
     <style>
         body {
-            background-color: black;
-            color: white;
-            padding-top: 50px; 
+            background-color: white;
+            color: black;
+            padding-top: 50px; /* отступ сверху для всего */
         }
 
-        .menu-container {
+       .menu-container {
             display: flex;
             justify-content: space-between;
-            align-items: center; 
+            align-items: center; /*центр по вертикали */
         }
 
-        .logo-container {
-            margin-left: 200px; 
+       .logo-container {
+            order: -1; /* Позиционирует логотип перед другими элементами */
+            margin-left: 200px; /* отступ слева для логотипа */
         }
 
-        .menu-item {
+       .menu-item {
             flex: 1;
-            text-align: right; 
-            letter-spacing: 2px; 
+            text-align: right; /* Выравнивание текста по правому краю */
+            letter-spacing: 2px; /* отступ между буквами */
+            gap: 20px; /* Добавляем небольшой отступ между пунктами меню (не то меню)*/
         }
 
-            .menu-item:first-child {
-                margin-left: 0; 
-            }
+       .menu-item:first-child {
+            margin-left: 0; /* Убираем отступ слева для первого элемента */
+        }
 
-            .menu-item:last-child {
-                margin-right: 200px; 
-            }
+       .menu-item:last-child {
+            margin-right: 200px; /* Уменьшаем отступ справа для последнего элемента */
+        }
+
+       .menu-items {
+            display: flex;
+            gap: 150px; /* Добавляем небольшой отступ между пунктами меню */
+        }
+
+        .photo-background{
+            text-align: right;
+        }
+
+        .size {
+            width: 250px;
+            height: 65px;
+        }
+
+        .resized-image {
+            width: 1600px;
+            height: 1100px;
+        }
+
     </style>
-</head>
-<body>
-    <article>
+
+</head> 
+<body> 
+    <article> 
+
         <div class="menu-container">
+            
             <div class="logo-container">
-                <img src="D:\pict\Logo.png" alt="Логотип компании">
+                <img src="D:\pict\luvr\Logo.png" alt="LouvreLogo" class="size">
             </div>
-            <div class="menu-item"><h4>Visiting</h4></div>
-            <div class="menu-item"><h4>Explore</h4></div>
-            <div class="menu-item"><h4>Video</h4></div>
-            <div class="menu-item"><h4>Tickets</h4></div>
-            <div class="menu-item"><h4>Contacts</h4></div>
+
+            <div class="menu-items">
+                <div class="menu-item"><h3>Visiting</h3></div>
+                <div class="menu-item"><h3>Explore</h3></div>
+                <div class="menu-item"><h3>Video</h3></div>
+                <div class="menu-item"><h3>Tickets</h3></div>
+                <div class="menu-item"><h3>Contacts</h3></div>
+            </div>
         </div>
+
+        <div class="photo-background">
+            <img src="D:\pict\luvr\background.jpg" alt="Louvre Museum Background" class="resized-image">
+        </div>
+
     </article>
-</body>
+</body> 
 </html>
